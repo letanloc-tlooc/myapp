@@ -2,6 +2,6 @@ print("hellooo")
 
 print("hi hi")
 
-a=4
+a=10
 b=2
 print(a+b)
