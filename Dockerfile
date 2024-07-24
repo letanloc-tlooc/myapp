@@ -13,8 +13,6 @@ WORKDIR /demo-myapp
 # Sao chép mã nguồn vào container
 COPY . .
 
-# Cài đặt các phụ thuộc
-RUN pip install --no-cache-dir -r requirements.txt
 
 # Chạy ứng dụng (hoặc các lệnh khác)
 CMD ["python", "demo.py"]
