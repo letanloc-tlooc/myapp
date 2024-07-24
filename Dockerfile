@@ -11,10 +11,10 @@ FROM python:3.8.10
 WORKDIR /demo-myapp
 
 # Sao chép mã nguồn vào container
-COPY demo.py .
+COPY . .
 
 # Cài đặt các phụ thuộc
-# RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Chạy ứng dụng (hoặc các lệnh khác)
 CMD ["python", "demo.py"]
